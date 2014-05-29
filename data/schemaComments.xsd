@@ -1,29 +1,29 @@
-<?xml version="1.0" encoding="ISO-8859-1"?> 
-<xs:schema 
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xs:schema
 xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
-	<xs:complexType name="commentType">  
-		<xs:sequence> 
-			<xs:element name="author" type="xs:string"/> 
+	<xs:complexType name="commentType">
+		<xs:sequence>
+			<xs:element name="author" type="xs:string"/>
 			<xs:element name="mark" type="mark"/>
-			<xs:element name="text" type="xs:string"/>  
+			<xs:element name="text" type="xs:string"/>
 		</xs:sequence>
-		<xs:attribute name="idParent" type="xs:int" use="required"/> 
+		<xs:attribute name="idParent" type="xs:int" use="required"/>
 		<xs:attribute name="id" type="xs:ID" use="required"/>
 	</xs:complexType>
 
-	<xs:simpleType name="mark"> 
-		<xs:restriction base="xs:int"> 
-			<xs:minInclusive value="0"/> 
-			<xs:maxInclusive value="10"/> 
-		</xs:restriction> 
+	<xs:simpleType name="mark">
+		<xs:restriction base="xs:int">
+			<xs:minInclusive value="0"/>
+			<xs:maxInclusive value="10"/>
+		</xs:restriction>
 	</xs:simpleType>
 
 	<xs:element name="comments">
 		<xs:complexType>
-			<xs:sequence> 
+			<xs:sequence>
 				<xs:element name="comment" type="commentType" maxOccurs="unbounded"/>
 			</xs:sequence>
-		</xs:complexType> 
+		</xs:complexType>
 	</xs:element>
-</xs:schema> 
+</xs:schema>

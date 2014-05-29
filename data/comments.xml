@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<comments xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="schemaComments.xsd">
-	<comment idParent="1640" id="id1">
-		<author>Jean-Michel</author>
-		<mark>10</mark>
-		<text>
-		Introduction
-		XML et la composition de documents
-		</text>
-	</comment>
+<comments xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="schemaComments.xsd">
+  <comment idParent="1641">
+    <author>Jean-Raoul</author>
+    <mark>4</mark>
+    <text>NOT TERRIBLE</text>
+  </comment>
+  <comment idParent="1641">
+    <author>Jean-Eudes</author>
+    <mark>8</mark>
+    <text>NOT Bad</text>
+  </comment>
+  <comment idParent="1641">
+    <author>Jean-Marie</author>
+    <mark>8</mark>
+    <text>NOT Bad</text>
+  </comment>
 </comments>

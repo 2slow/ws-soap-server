@@ -12,13 +12,16 @@ class Comment {
         $comments = [];
         foreach($root->xpath("//comment") as $comment) {
             if(intval($comment['idParent']) === $idParent){
-                array_push($comments, array((string)$comment['id'], (string) $comment->author, intval($comment->mark), (string) $comment->text ));
-                
-            } 
+                array_push($comments, array(
+                    'author' => (string) $comment->author,
+                    'mark' => intval($comment->mark),
+                    'comment' => (string) $comment->text)
+                );
+            }
         }
-        return $comments; 
+        return $comments;
     }
-    
+
     /**
      * Add comment method
      *
@@ -51,15 +54,13 @@ class Comment {
 
         // Validation of new element with schema
         if($root->schemaValidate('data/schemaComments.xsd')) {
-
             $root->save('data/comments.xml');
         } else {
-
             return "Error: input doesn't match xsd schema rules";
-        } 
+        }
         return $root->saveXML($root);
     }
 
 
-    
+
 }

@@ -15,7 +15,6 @@ $result = $client->get_comments_by_parent_id(1640);
 // id is a string, must start with a letter
 $addComment = $client->add_comment("id5", 1645, "Jean-Louiiiis", 5, "c etait pas terrible");
 
-echo "get comments : ";
 echo "<pre>";
 var_dump($result);
 echo "</pre>";
