@@ -5,7 +5,7 @@
 require 'init_autoloader.php';
 
 // Change path to match config
-$path = 'http://localhost/workspace/ws-soap-server/';
+$path = 'http://localhost/workspace/github/ws-soap-server/';
 
 $client = new Zend\Soap\Client($path."SoapServer.php?wsdl", array('soap_version' => SOAP_1_2));
 

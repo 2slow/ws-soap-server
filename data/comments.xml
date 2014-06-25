@@ -2,18 +2,18 @@
 <comments xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:noNamespaceSchemaLocation="schemaComments.xsd">
   <comment idParent="1641">
-    <author>Jean-Raoul</author>
+    <author>rhannequin</author>
     <mark>4</mark>
-    <text>NOT TERRIBLE</text>
+    <text>not terrible</text>
   </comment>
   <comment idParent="1641">
-    <author>Jean-Eudes</author>
+    <author>2slow</author>
     <mark>8</mark>
-    <text>NOT Bad</text>
+    <text>good</text>
   </comment>
   <comment idParent="1641">
-    <author>Jean-Marie</author>
-    <mark>8</mark>
-    <text>NOT Bad</text>
+    <author>jagbomb</author>
+    <mark>9</mark>
+    <text>very good</text>
   </comment>
 </comments>
